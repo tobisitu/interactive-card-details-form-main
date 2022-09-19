@@ -1,0 +1,386 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.header{
+    background-image: url('./images/bg-main-mobile.png');
+    height: 13rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.credit-card-container {
+    position: relative;
+    color: hsl(0, 0%, 100%);
+}
+
+input.card-input {
+    background-color: transparent;
+    border: none;
+    color:hsl(0, 0%, 100%);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: hsl(0, 0%, 100%);
+    opacity: 1; /* Firefox */
+}
+
+.credit-card {
+    width: 80%;
+    position: absolute;
+}
+
+.credit-card-back {
+    width: 15.5rem;
+    top: 1.6rem;
+    left: 4.5rem;
+}
+
+
+.credit-card-front {
+    width: 15.5rem;
+    top: 6.5rem;
+    left: 1.4rem;
+}
+
+.credit-card-logo {
+    position: absolute;
+    width: 3rem;
+    top: 7.5rem;
+    left: 2.5rem;
+}
+
+#cardnumber-value{
+    position: absolute;
+    letter-spacing: 1.5px;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    top: 11rem;
+    left: 2.5rem;
+}
+
+#cardholder-value{
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: hsl(0, 0%, 100%);
+    top: 13.25rem;
+    left: 2.5rem;
+    font-size: 0.5rem;
+}
+
+#expdate-mm-value{
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: hsl(0, 0%, 100%);
+    top: 13.25rem;
+    left: 13.5rem;
+    font-size: 0.5rem;
+}
+
+#expdate-slash {
+    position: absolute;
+    letter-spacing: 1px;
+    color: hsl(0, 0%, 100%);
+    top: 13.25rem;
+    left: 14.5rem;
+    font-size: 0.5rem;
+}
+
+#expdate-yy-value{
+    position: absolute;
+    letter-spacing: 1px;
+    color: hsl(0, 0%, 100%);
+    top: 13.25rem;
+    left: 15rem;
+    font-size: 0.5rem;
+}
+
+#cvc-value{
+    position: absolute;
+    letter-spacing: 1px;
+    color: hsl(0, 0%, 100%);
+    top: 5.1rem;
+    left: 16.5rem;
+    font-size: 0.8rem;
+}
+
+
+.form{
+    margin-top: 100px;
+}
+
+.form-label {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    color: hsl(278, 68%, 11%);
+    font-weight: 500;
+}
+
+.btn-confirm, .btn-continue{
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+input:hover{
+    border-color: hsl(278, 68%, 11%) !important;
+}
+
+
+.btn-confirm:hover, .btn-confirm:focus,.btn-confirm:active, .btn-continue:focus, .btn-continue:active, .btn-continue:hover
+ {
+    color: hsl(278, 68%, 11%) !important;
+    border: 1px solid hsl(278, 68%, 11%) !important;
+    background-color: hsl(0, 0%, 100%) !important;
+    height: 50px;
+}
+
+
+.error-message{
+    margin-top: 5px;
+    color: red;
+    display: none;
+}
+
+#success {
+    display: none;
+}
+
+.success-subheading {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 22px;
+    color: hsl(278, 68%, 11%);
+    font-weight: 500;
+}
+
+.success-body{
+    letter-spacing:1.5px;
+    font-size: 14px;
+    color: hsl(270, 3%, 87%);
+    font-weight: 500;
+}
+.section-div {
+    text-align: center;
+}
+
+
+@media only screen and (min-width:768px) {
+    .wrapper{
+        display: flex;
+    }
+
+    .form{
+        /* margin-top: 0; */
+        margin: auto;
+    }
+
+    #cardForm{
+        /* width: 500px; */
+        width: 16rem;
+        margin: auto;
+    }
+
+    .header{
+        background-image: url('./images/bg-main-mobile.png');
+        background-size: cover;
+        /* width: 35%; */
+        width: 20rem;
+        height: 100vh;
+    }
+
+    .credit-card-front {
+        /* width: 16rem; */
+        width: 15rem;
+        top: 6rem;
+        /* left: 4rem; */
+        left: 2.25rem;
+    }
+
+    .credit-card-logo {
+        left: 3.5rem;
+        top: 7rem;
+        position: absolute;
+        /* width: 65px; */
+        /* top: 204px; */
+        /* left: 136px; */
+    }
+
+    #cardnumber-value{
+        /* top: 285px; */
+        /* left: 136px; */
+        left: 3.5rem;
+        top: 10.5rem;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    #cardholder-value{
+        /* top: 320px; */
+        /* left: 136px; */
+        left: 3.5rem;
+        top: 12.5rem;
+        font-size: 0.5rem;
+        width: 100%;
+        letter-spacing: 1.5px;
+        /* font-size: 15px; */
+    }
+
+    #expdate-mm-value {
+        /* top: 320px; */
+        /* right: -168px; */
+        right: -16rem;
+        top: 12.5rem;
+        font-size: 0.5rem;
+        width: 100%;
+        letter-spacing: 1.5px;
+        /* font-size: 15px; */
+    }
+
+    #expdate-slash {
+        right: -17rem;
+        top: 12.5rem;
+        font-size: 0.5rem;
+        width: 100%;
+        letter-spacing: 1.5px;
+    }
+    
+    #expdate-yy-value{
+        right: -17.25rem;
+        top: 12.5rem;
+        font-size: 0.5rem;
+        width: 100%;
+        letter-spacing: 1.5px;
+    }
+
+    .credit-card-back {
+        /* right: -172px; */
+        /* top: 379px; */
+        /* width: 100%; */
+        /* left: 102px; */
+        /* top: 180px; */
+        /* width: 16rem; */
+        width: 15rem;
+        top: 15.5rem;
+        left: 4rem;
+    }
+
+    #cvc-value{
+        /* top: 456px; */
+        /* right: -239px; */
+        width: 15rem;
+        top: 18.9rem;
+        left: 15.5rem;
+        /* font-size: 16px; */
+    }
+    .form-label {
+        /* font-size: 18px; */
+    }
+
+    .section-div {
+        width: 500px;
+        margin: auto;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .wrapper{
+        display: flex;
+    }
+
+    .form{
+        /* margin-top: 0; */
+        margin: auto;
+    }
+
+    #cardForm{
+        width: 25rem;
+    }
+
+    .header{
+        width: 25rem;
+    }
+
+    .credit-card-front {
+        width: 20rem;
+        top: 8rem;
+        left: 6rem;
+    }
+
+    .credit-card-logo {
+        width: 3.5rem;
+        top: 9rem;
+        left: 7rem;
+    }
+
+    #cardnumber-value{
+        font-size: 1.25rem;
+        top: 14rem;
+        left: 7rem;
+    }
+
+    #cardholder-value{
+        font-size: 0.6rem;
+        top: 16.5rem;
+        left: 7rem;
+        letter-spacing: 1.5px;
+    }
+
+    #expdate-mm-value {
+        font-size: 0.6rem;
+        top: 16.5rem;
+        left: 21rem;
+        letter-spacing: 1.5px;
+    }
+
+    #expdate-slash {
+        font-size: 0.6rem;
+        top: 16.5rem;
+        left: 22.2rem;
+        letter-spacing: 1.5px;
+    }
+    
+    #expdate-yy-value{
+        font-size: 0.6rem;
+        top: 16.5rem;
+        left: 22.5rem;
+        letter-spacing: 1.5px;
+    }
+
+    .credit-card-back {
+        width: 20rem;
+        top: 20rem;
+        left: 10rem;
+    }
+
+    #cvc-value{
+        font-size: 0.8rem;
+        top: 24.8rem;
+        left: 26rem;
+        letter-spacing: 1.5px;
+    }
+
+    .section-div {
+        width: 500px;
+        margin: auto;
+    }
+}

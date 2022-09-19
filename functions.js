@@ -1,6 +1,6 @@
 var form = document.getElementById("cardForm");
 form.addEventListener('submit', handleForm);
-
+// 
 var cardDisplayForm = document.getElementById("cardDisplayForm");
 
 function onCardHolderInputChange() {
